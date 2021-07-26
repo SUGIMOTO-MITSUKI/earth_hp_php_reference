@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro",
+    "Yu Gothic Medium", "游ゴシック Medium", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrap {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.wrap-s {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.ptb-m {
+  padding: 80px 0;
+}
+
+.btn {
+  display: block;
+  width: 300px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #cd0224;
+  color: #fff;
+}
+
+.ttl {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.page-mv h1{
+  position: absolute;
+  top: 30px;
+}
+
+.page-mv {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: navy;
+  background: url(../img/common/globe.png) center / cover;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 11vh;
+  padding: 0 30px;
+  background-color: #fff;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.header-ttl {
+  font-size: 24px;
+  width: 120px;
+}
+
+.header-nav-list {
+  display: flex;
+  font-weight: bold;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.menu {
+  display: none;
+}
+.drawer-nav {
+  display: none;
+}
+/* bottom-contact */
+
+.bottom-contact {
+  background-color: #f5f6f9;
+  text-align: center;
+}
+
+.bottom-contact-txt {
+  margin-top: 10px;
+}
+
+.bottom-contact-btn {
+  margin: 40px auto 0;
+}
+
+/* footer */
+
+.footer {
+  padding: 20px 0;
+  color: #fff;
+  background-color: #222;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav-item:after {
+  content: "|";
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer-nav-item:last-child:after {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 85%;
+  }
+
+  .wrap-s {
+    width: 90%;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
+    width: 36px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+  }
+
+  .menu-line-top,
+  .menu-line-middle,
+  .menu-line-bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .menu-line-top {
+    top: 0;
+  }
+
+  .menu-line-middle {
+    top: 14px;
+  }
+
+  .menu-line-bottom {
+    bottom: 0;
+  }
+
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+
+  .drawer-nav{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    background: #fff;
+    transition: .7s;
+  }
+
+  .drawer-nav-list {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .drawer-nav-item {
+    margin-top: 40px;
+    color: #0033cc;
+    font-size: 18px;
+  }
+
+  .in {
+    transform: translateX(100%);
+  }
+
+  .footer-copyright {
+    margin: 0 auto;
+  }
+
+  .footer-nav-item {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .footer-nav-item:after {
+    display: none;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>株式会社EARTH</title>
+  <meta name="description" content="架空のコーポレートサイトです。" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="icon" type="image/x-icon" href="atlas.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <h1 class="header-ttl">
+      <a href="index.html">
+        <i class="fas fa-atlas"> EARTH</i>
+      </a>
+    </h1>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item"><a href="index.html">ホーム</a></li>
+        <li class="header-nav-item"><a href="service.html">事業内容</a></li>
+        <li class="header-nav-item"><a href="blog.html">社員ブログ</a></li>
+        <li class="header-nav-item"><a href="company.html">会社概要</a></li>
+        <li class="header-nav-item"><a href="recruit.html">採用情報</a></li>
+        <li class="header-nav-item"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <div class="menu" id="menu">
+      <span class="menu-line-top"></span>
+      <span class="menu-line-middle"></span>
+      <span class="menu-line-bottom"></span>
+    </div>
+    <nav class="drawer-nav" id="drawer-nav">
+      <ul class="drawer-nav-list">
+        <li class="drawer-nav-item"><a href="index.html">ホーム</a></li>
+        <li class="drawer-nav-item"><a href="service.html">事業内容</a></li>
+        <li class="drawer-nav-item"><a href="blog.html">社員ブログ</a></li>
+        <li class="drawer-nav-item"><a href="company.html">会社概要</a></li>
+        <li class="drawer-nav-item"><a href="recruit.html">採用情報</a></li>
+        <li class="drawer-nav-item"><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- header end -->
+  <!-- page-mv -->
+  <div class="page-mv">
+    <h1 class="ttl">お問い合わせ</h1>
+  </div>
+  <!-- page-mv end -->
+  <main>
+    <div class="contact ptb-m wrap-s">
+      <!-- formデータ送信method -->
+      <form class="contact-form" action="confirm.php" method="POST">
+        <div class="contact-form-item">
+          <label class="contact-form-item-name" for="company">会社名</label>
+          <input type="text" id="company" name="company" class="contact-form-item-input">
+        </div>
+        <div class="contact-form-item">
+          <label class="contact-form-item-name" for="name">お名前<span class="contact-form-item-required">*</span></label>
+          <input type="text" id="name" name="name" class="contact-form-item-input" required>
+        </div>
+        <div class="contact-form-item">
+          <label class="contact-form-item-name" for="email">メールアドレス<span
+              class="contact-form-item-required">*</span></label>
+          <input type="email" id="email" name="email" class="contact-form-item-input" required>
+        </div>
+        <div class="contact-form-item">
+          <label class="contact-form-item-name" for="comment">お問い合わせ内容<span
+              class="contact-form-item-required">*</span></label>
+          <textarea id="comment" name="comment" rows="8" cols="80" class="contact-form-item-textarea" required></textarea>
+        </div>
+        <input type="submit" value="内容確認" class="contact-form-submit">
+      </form>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner wrap">
+      <small class="footer-copyright">&copy; 2021 EARTH inc.</small>
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item"><a href="index.html">ホーム</a></li>
+          <li class="footer-nav-item"><a href="service.html">事業内容</a></li>
+          <li class="footer-nav-item"><a href="blog.html">社員ブログ</a></li>
+          <li class="footer-nav-item"><a href="company.html">会社概要</a></li>
+          <li class="footer-nav-item"><a href="recruit.html">採用情報</a></li>
+          <li class="footer-nav-item"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

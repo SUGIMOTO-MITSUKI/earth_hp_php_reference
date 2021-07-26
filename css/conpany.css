@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.company-info{
+  width: 100%;
+	border-bottom: 1px solid #222;
+}
+
+.company-info-name,
+.company-info-data{
+	border-top: 1px solid #222;
+	padding: 20px 0;
+}
+
+.company-info-name{
+	font-weight: bold;
+	width: 30%;
+}
+
+.company-info-data{
+	width: 70%;
+}
+/* アクセス */
+.access {
+	background-color: #fff;
+}
+.inner h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 28px;
+	text-align: center;
+}
+.inner {
+	padding: 70px 50px;
+	max-width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+.line {
+	background-color: #4a4a4a;
+	width: 55px;
+	height: 1px;
+	margin: 30px auto 60px;
+}

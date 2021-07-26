@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.service-item{
+	padding: 20px 0;
+	border-top: 1px solid #222;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service-item:last-child{
+	border-bottom: 1px solid #222;
+}
+
+.service-item-img{
+	width: 290px;
+}
+
+.service-item-detail{
+	width: calc(100% - 330px);
+}
+
+.service-item-ttl{
+	font-size: 24px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px){
+  .service-item-detail{
+    width: 100%;
+  }
+
+  .service-item-img{
+    width: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.confirm-wrap {
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+.confirm ul{
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+}
+
+.back {
+  width: 100px;
+  margin: 20px 10px 0 auto;
+	padding: 10px;
+	border: none;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.submit {
+  width: 100px;
+  margin: 20px auto 0 10px;
+	padding: 10px;
+  background-color: #cd0224;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+  .confirm ul{
+  margin-left: 15px;
+}
+}
